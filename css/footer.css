@@ -1,0 +1,115 @@
+.footer {
+  background: #000000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  display: grid;
+  align-items: center;
+  text-align: justify;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.footer-contato li a {
+  color: #ffffff;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+.contato {
+  margin: 0 10px;
+}
+
+.lista-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.footer-lista {
+  font-size: 20px;
+}
+
+.footer-lista {
+  text-align:right;
+}
+
+.link-gmail, .link-linkedin, .link-whatsapp {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  transition: left 0.3s ease;
+}
+
+.link-gmail, .link-whatsapp, .link-linkedin {
+  background-color: #101010;
+  cursor: default;
+  text-decoration: wavy;
+}
+
+.link-gmail:hover {
+  background: linear-gradient(#db4437 0%, #ea4335 100%);
+  box-shadow: 0 0 10px 0 #d14836;
+  transition: 0.1s;
+  transform: scale(1.1);
+  text-decoration: wavy;
+  left: 2px;
+}
+.link-whatsapp:hover {
+  background: linear-gradient(#25d366 0%, #075e54 100%);
+  box-shadow: 0 0 10px 0 #078;
+  transition: 0.1s;
+  transform: scale(1.1);
+  text-decoration: wavy;
+  left: 2px;
+}
+ .link-linkedin:hover {
+  background: linear-gradient(#4461d5 0%, #2946d3 100%);
+  box-shadow: 0 0 10px 0 #297bff;
+  transition: 0.1s;
+  transform: scale(1.1);
+  text-decoration: wavy;
+  left: 2px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .lista-container {
+    text-align: left;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row;
+  }
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+}
